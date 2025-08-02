@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Divine Care - Home Care Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #6c63ff;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+    }
+
+    .button {
+      background-color: white;
+      color: #6c63ff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      color: #6c63ff;
+      margin-bottom: 20px;
+    }
+
+    .services, .why, .contact, .form-section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .testimonials {
+      background-color: #e8e8ff;
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      background-color: #6c63ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #574fe1;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .section {
+        padding: 30px 10px;
+      }
+
+      .logo img {
+        height: 45px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Logo -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Divine Care Logo" />
+    </div>
+    <h1>Divine Care</h1>
+    <p>Compassionate Home Care You Can Trust</p>
+    <a href="#contact" class="button">Schedule a Free Consultation</a>
+  </header>
+
+  <!-- About Section -->
+  <div class="section about">
+    <h2>About Us</h2>
+    <p>At Divine Care, we believe that everyone deserves to live with dignity, comfort, and peace of mind. Our team of professional caregivers delivers exceptional in-home care tailored to the unique needs of each individual.</p>
+  </div>
+
+  <!-- Services Section -->
+  <div class="section services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Personal Care Assistance</li>
+      <li>Companionship</li>
+      <li>Meal Preparation</li>
+      <li>Medication Reminders</li>
+      <li>Light Housekeeping</li>
+      <li>Alzheimer’s & Dementia Care</li>
+      <li>Respite Care for Families</li>
+    </ul>
+  </div>
+
+  <!-- Why Choose Us Section -->
+  <div class="section why">
+    <h2>Why Choose Divine Care?</h2>
+    <ul>
+      <li>Trained & Compassionate Caregivers</li>
+      <li>Flexible Scheduling</li>
+      <li>Customized Care Plans</li>
+      <li>Licensed, Insured, and Background Checked Staff</li>
+      <li>24/7 Availability</li>
+    </ul>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="section testimonials">
+    <h2>Testimonials</h2>
+    <p><em>“Divine Care has truly been a blessing for our family. Their caregivers are kind, professional, and attentive.”</em> — Linda T.</p>
+    <p><em>“I sleep better at night knowing my mom is in good hands. Thank you, Divine Care.”</em> — Marcus B.</p>
+  </div>
+
+  <!-- Contact Info Section -->
+  <div class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> (123) 456-7890</p>
+    <p><strong>Email:</strong> info@divinecare.com</p>
+    <p><strong>Location:</strong> Serving [Your Area Here]</p>
+  </div>
+
+  <!-- Working Contact Form -->
+  <div class="section form-section">
+    <h2>Send Us a Message</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" />
+    </form>
+    <p style="font-size: 0.9em; color: #666;">We’ll get back to you within 24 hours.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Divine Care Home Services. All rights reserved.<br />
+    <a href="#" style="color: #ccc; text-decoration: underline;">Privacy Policy</a> |
+    <a href="#" style="color: #ccc; text-decoration: underline;">Terms of Service</a>
+  </footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divine Care - Home Care Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #6c63ff;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+    }
+
+    .button {
+      background-color: white;
+      color: #6c63ff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      color: #6c63ff;
+      margin-bottom: 20px;
+    }
+
+    .services, .why, .contact {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .testimonials {
+      background-color: #e8e8ff;
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .section {
+        padding: 30px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Divine Care</h1>
+    <p>Compassionate Home Care You Can Trust</p>
+    <a href="#contact" class="button">Schedule a Free Consultation</a>
+  </header>
+
+  <div class="section about">
+    <h2>About Us</h2>
+    <p>At Divine Care, we believe that everyone deserves to live with dignity, comfort, and peace of mind. Our team of professional caregivers delivers exceptional in-home care tailored to the unique needs of each individual.</p>
+  </div>
+
+  <div class="section services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Personal Care Assistance</li>
+      <li>Companionship</li>
+      <li>Meal Preparation</li>
+      <li>Medication Reminders</li>
+      <li>Light Housekeeping</li>
+      <li>Alzheimer’s & Dementia Care</li>
+      <li>Respite Care for Families</li>
+    </ul>
+  </div>
+
+  <div class="section why">
+    <h2>Why Choose Divine Care?</h2>
+    <ul>
+      <li>Trained & Compassionate Caregivers</li>
+      <li>Flexible Scheduling</li>
+      <li>Customized Care Plans</li>
+      <li>Licensed, Insured, and Background Checked Staff</li>
+      <li>24/7 Availability</li>
+    </ul>
+  </div>
+
+  <div class="section testimonials">
+    <h2>Testimonials</h2>
+    <p><em>“Divine Care has truly been a blessing for our family. Their caregivers are kind, professional, and attentive.”</em> — Linda T.</p>
+    <p><em>“I sleep better at night knowing my mom is in good hands. Thank you, Divine Care.”</em> — Marcus B.</p>
+  </div>
+
+  <div class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> (123) 456-7890</p>
+    <p><strong>Email:</strong> info@divinecare.com</p>
+    <p><strong>Location:</strong> Serving [Your Area Here]</p>
+    <a href="mailto:info@divinecare.com" class="button">Request a Callback</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Divine Care Home Services. All rights reserved.<br>
+    <a href="#" style="color: #ccc; text-decoration: underline;">Privacy Policy</a> |
+    <a href="#" style="color: #ccc; text-decoration: underline;">Terms of Service</a>
+  </footer>
+
+</body>
+</html>
